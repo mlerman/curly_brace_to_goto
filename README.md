@@ -10,11 +10,17 @@ For example:
 ///* This is a comment: It is legal to write the following code *///
 
 set VAL=123
+
 if "%VAL%" == "456" {{{ 
+
 echo on ne passe pas ici
+
 }}} else {{{
+
 echo on passe ici
+
 }}}
+
 
 The script creates a new batch file in which the clauses are replaced with goto statements to appropriate labels locations.
 The clauses can be on the same line or different line. 
