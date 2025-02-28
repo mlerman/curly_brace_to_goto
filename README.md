@@ -10,6 +10,7 @@ For example:
 ///* This is a comment: It is legal to write the following code *///
 
 set VAL=123
+
 if "%VAL%" == "456" {{{ 
 
 echo on ne passe pas ici
