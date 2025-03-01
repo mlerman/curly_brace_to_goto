@@ -7,7 +7,7 @@ It also allows incorporating comment blocks begining with "///\*" and ending wit
 
 For example:
 
-///* This is a comment: It is legal to write the following code *///
+///* This is a comment: It is legal to write the following code in a batch file (.bat) *///
 
 set VAL=123
 
