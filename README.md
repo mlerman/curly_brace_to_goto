@@ -2,8 +2,8 @@
 
 This run.py python script enhances the syntax and the structure of the Windows batch files.
 
-It allows using if/else statements with clauses of curly braces, opening with {{{ and closing with }}}
-It also allows incorporating block comment begining with ///* and ending with *///
+It allows using if/else statements with clauses of curly braces, opening with "{{{" and closing with "}}}".
+It also allows incorporating block comment begining with "///*" and ending with "*///"
 
 For example:
 
@@ -22,9 +22,12 @@ echo on passe ici
 }}}
 
 
-The script creates a new batch file in which the clauses are replaced with goto statements to appropriate labels locations.
-The clauses can be on the same line or different line. 
+The script creates a new batch file in which the "if" and "else" clauses are replaced with goto statements to appropriate labels locations.
+The clauses can be on the same line or different line and on different alineas. 
 They can be nested indefinitely allowing the implementation of a complex logic.
+
+Try it and enjoy !
+MiKL~
 
 
 
