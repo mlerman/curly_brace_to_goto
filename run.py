@@ -239,39 +239,7 @@ if args.file is not None:
     with open(args.file, 'r') as fr:
         #strfile = fr.read().replace('\n', '')      # remove the end of lines
         strfile = fr.read()                         # keep the end of lines
-    #print strfile
-    
-    #fh = open(args.file)
-    #for line in fh:
-    #    print line.rstrip()
-    #fh.close()
-
-
-
-
-# print(parChecker('{{{}}}'))
-# print(parChecker('{{}'))
-
-# print(parChecker('{{{}}toto}'))
-# print(parChecker('{{}t'))
-
-# print(parChecker('{{{}}}toto'))
-# print(parChecker('titi{{}'))
-
-# print ">>>"
-# print strfile
-# print "<<<"
 
 strfile = beautify(strfile)
-
-# print "--->>>"
-# print strfile
-# text_file = open("beautified.txt", "w")
-# n = text_file.write(strfile)
-# text_file.close()
-# print "<<<---"
-
-
-
 print(parChecker(strfile))
 
