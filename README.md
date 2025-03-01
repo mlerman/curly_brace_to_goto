@@ -22,7 +22,7 @@ echo on passe ici
 }}}
 
 
-The script creates a new batch file in which the "if" and "else" clauses are replaced with goto statements to appropriate labels locations.
+The script creates a new batch file in which the "if" and "else" clauses are replaced with goto statements to the appropriate labels and locations.
 The clauses can be on the same line or different line and on different alineas. 
 They can be nested indefinitely allowing the implementation of a complex logic.
 
