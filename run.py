@@ -53,10 +53,8 @@ def parChecker(inputString):
     while index < len(inputString) and balanced:
         symbol = inputString[index]
         symbol_str = inputString[index:index+size_symbol]
-        #print symbol_str + " vs " + open_symbol_str + " vs " + close_symbol_str
 
         if (symbol_str != open_symbol_str) and (symbol_str != close_symbol_str):
-        #if (symbol != open_symbol) and (symbol != close_symbol):
             index = index + 1
             continue
         
@@ -72,8 +70,6 @@ def parChecker(inputString):
         
         current_string = inputString[previous_index:index]
         first_word = ""
-        #print "processing current_string : " + current_string
-        #fw.write("\nrem processing current_string : --"+current_string+"--\n")
 
         current_string_splitted = current_string.split('\n')
         if len(current_string_splitted) > 1:
@@ -81,8 +77,6 @@ def parChecker(inputString):
         else :
             last_line_of_current_string=current_string_splitted[0]
         
-        #fw.write("\nrem last_line_of_current_string is : --"+last_line_of_current_string+"--\n")
-        #fw.write("\nrem len is : --"+str(len(current_string_splitted))+"--\n")
         
         if last_line_of_current_string.strip():      # only if not empty
             first_word = last_line_of_current_string.split()[0]
@@ -123,7 +117,6 @@ def parChecker(inputString):
         if (symbol_str == open_symbol_str) :
             if (ctype == 1) or (ctype == 3) or (ctype == 11) or (ctype == 13):     # type if (1) or elseif (3)
                 fw.write(" goto LABEL_BEGIN_" + str(index))
-                #fw.write(" & rem line 65")
                 fw.write("\n")
 
                 fw.write(" goto LABEL_CLOSE_" + str(index) + "_END")
@@ -133,7 +126,6 @@ def parChecker(inputString):
                 str_condition = str_condition.replace("if","")
                 str_condition = str_condition.replace("w_elseif","")
                 str_condition = str_condition.replace("elseif","")
-                #fw.write(" & rem line 101, condition is  " + str_condition)
                 fw.write("\n")
 
                 str_label_end = ":LABEL_CLOSE_" + str(index) + "_END"        #we need this label later
@@ -234,7 +226,6 @@ args = parser.parse_args()
 
 strfile=""
 if args.file is not None:
-    #print "processing : " + args.file
     
     with open(args.file, 'r') as fr:
         #strfile = fr.read().replace('\n', '')      # remove the end of lines
