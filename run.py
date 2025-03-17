@@ -23,7 +23,23 @@
 import argparse
 import re
 import fileinput
-from pythonds.basic import Stack
+
+class Stack:
+  "A container with a last-in-first-out (LIFO) queuing policy."
+  def __init__(self):
+    self.list = []
+
+  def push(self,item):
+    "Push 'item' onto the stack"
+    self.list.append(item)
+
+  def pop(self):
+    "Pop the most recently pushed item from the stack"
+    return self.list.pop()
+
+  def isEmpty(self):
+    "Returns true if the stack is empty"
+    return len(self.list) == 0
 
 open_symbol="{"
 close_symbol="}"
@@ -232,5 +248,6 @@ if args.file is not None:
         strfile = fr.read()                         # keep the end of lines
 
 strfile = beautify(strfile)
-print(parChecker(strfile))
+# print(parChecker(strfile))
+parChecker(strfile)
 
