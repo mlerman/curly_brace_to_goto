@@ -27,6 +27,14 @@ The script creates a new batch file in which the "if" and "else" clauses are rep
 The clauses can be on the same line or on different lines, and with different alineas. 
 They can be nested indefinitely, allowing the implementation of a complex logic.
 
+How it works?
+
+1) Write your batch file with the extended syntax presented here.
+2) Process your edited file with the present program to generate a new batch file.
+3) Run the new batch file normally.
+
+Step 2) is needed only when the original file is changed. There is no delay or penalty at run time.
+
 Try it and enjoy !
 
 MiKL~
