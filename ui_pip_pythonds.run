@@ -1,3 +1,0 @@
-C:\Python27\Scripts\pip.exe install pythonds 
-rem pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org pythonds
-pause
